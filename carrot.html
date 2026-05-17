@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrot Growth Patterns – From Seed to Harvest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn how carrots grow from seed to harvest: stages, root development patterns, and key care tips." />
+  <style>
+    :root {
+      --orange: #f57c00;
+      --dark: #263238;
+      --light: #fafafa;
+      --accent: #8bc34a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f3f4f6;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--orange), #ffb74d);
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.4rem;
+    }
+    header p {
+      margin: 0;
+      max-width: 700px;
+      margin-inline: auto;
+      font-size: 1.05rem;
+    }
+    main {
+      max-width: 960px;
+      margin: -2rem auto 3rem;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem 1.75rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--orange);
+      font-size: 1.6rem;
+    }
+    h3 {
+      margin-top: 1.5rem;
+      color: #37474f;
+      font-size: 1.2rem;
+    }
+    .stage {
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1.25rem 0;
+    }
+    .tagline {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 0.4rem;
+    }
+    ul {
+      padding-left: 1.1rem;
+    }
+    li {
+      margin: 0.25rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      background: #e3f2fd;
+      color: #1565c0;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-left: 0.4rem;
+    }
+    .timeline {
+      border-top: 1px dashed #cfd8dc;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      font-size: 0.95rem;
+    }
+    .timeline strong {
+      color: #455a64;
+    }
+    .tip {
+      background: #fffde7;
+      border-left: 4px solid #fbc02d;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #78909c;
+      padding: 1.5rem 1rem 2rem;
+    }
+    @media (min-width: 768px) {
+      header h1 { font-size: 2.8rem; }
+      .card { padding: 2.25rem 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tagline">Rooted science for gardeners</div>
+    <h1>Carrot Growth Patterns</h1>
+    <p>
+      From a dust-like seed to a crisp orange root, carrots follow a predictable growth pattern.
+      Understanding each stage—above and below the soil—helps you grow straighter, sweeter harvests.
+    </p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Overview of carrot growth</h2>
+      <p>
+        Carrots (<em>Daucus carota</em>) are cool-season root crops. Most varieties take about
+        60–80 days from sowing to harvest, with baby carrots ready earlier and storage types
+        taking a bit longer. While the foliage you see powers growth, the real story is the
+        taproot: how it forms, thickens, and stores sugars over time.
+      </p>
+      <div class="grid">
+        <div>
+          <h3>Key patterns</h3>
+          <ul>
+            <li><strong>Slow start:</strong> Germination is relatively slow (7–21 days).</li>
+            <li><strong>Hidden progress:</strong> Early energy goes into root formation underground.</li>
+            <li><strong>Steady thickening:</strong> Root diameter increases most rapidly mid-season.</li>
+            <li><strong>Quality vs. time:</strong> Leaving roots too long can lead to woody texture.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ideal conditions</h3>
+          <ul>
+            <li><strong>Soil:</strong> Deep, loose, stone-free, well-drained.</li>
+            <li><strong>Temperature:</strong> Cool to mild (roughly 10–24&nbsp;°C).</li>
+            <li><strong>Moisture:</strong> Evenly moist, never waterlogged or bone-dry.</li>
+            <li><strong>Light:</strong> Full sun for strong foliage and sugar-rich roots.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tip">
+        Think of carrots as “front-loaded” work: careful soil prep and moisture early on prevent
+        forked, hairy, or stunted roots later.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stage 1 – Seed and germination <span class="pill">Days 0–21</span></h2>
+
+      <div class="stage">
+        <h3>Seed stage</h3>
+        <p>
+          Carrot seeds are tiny and shallow-sown, usually only a few millimetres deep. Once in
+          contact with moist soil, they absorb water and activate the embryo inside. At this point,
+          there is no visible growth above ground, but the seed is preparing to sprout.
+        </p>
+        <ul>
+          <li><strong>Pattern:</strong> No top growth; internal metabolic activity ramps up.</li>
+          <li><strong>Risk:</strong> Drying out at this stage can kill or severely weaken seeds.</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3>Germination and emergence</h3>
+        <p>
+          The first visible sign of life is the radicle (baby root) pushing downward, followed by
+          the shoot moving upward. Germination typically takes 7–21 days depending on soil
+          temperature and moisture. Seedlings emerge with slender, grass-like cotyledons.
+        </p>
+        <ul>
+          <li><strong>Root pattern:</strong> A single taproot heads straight down, seeking depth.</li>
+          <li><strong>Top pattern:</strong> Minimal foliage; energy is focused below the soil.</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <strong>Timeline note:</strong> Uneven moisture during this window is the most common cause
+        of patchy carrot stands and irregular spacing.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stage 2 – Seedling and foliage development <span class="pill">Weeks 3–5</span></h2>
+
+      <div class="stage">
+        <h3>Early seedling stage</h3>
+        <p>
+          After emergence, the plant produces its first true leaves—fine, feathery foliage typical
+          of the carrot family. Above ground, plants look delicate; below ground, the taproot is
+          thickening slightly but still resembles a thin white root.
+        </p>
+        <ul>
+          <li><strong>Root pattern:</strong> Taproot elongates; small lateral root hairs form.</li>
+          <li><strong>Top pattern:</strong> A small rosette of leaves begins to form.</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3>Foliage expansion</h3>
+        <p>
+          As more leaves appear, the plant’s photosynthetic capacity increases. This is when
+          competition becomes important: crowded seedlings will invest in foliage rather than
+          building thick roots.
+        </p>
+        <ul>
+          <li><strong>Root pattern:</strong> Root is still slender but starting to store energy.</li>
+          <li><strong>Management:</strong> Thinning to proper spacing (about 3–5&nbsp;cm apart) is crucial.</li>
+        </ul>
+      </div>
+
+      <div class="tip">
+        Thin earlier rather than later. Once roots start to swell, pulling neighbours can disturb
+        or deform the ones you keep.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stage 3 – Root initiation and early swelling <span class="pill">Weeks 4–7</span></h2>
+
+      <div class="stage">
+        <h3>Taproot shaping</h3>
+        <p>
+          This is the stage where the carrot decides its basic shape. In deep, loose soil, the
+          taproot grows straight and uniform. In compacted or stony soil, it may fork, twist, or
+          develop multiple tips.
+        </p>
+        <ul>
+          <li><strong>Root pattern:</strong> Rapid downward growth, beginning of noticeable thickening.</li>
+          <li><strong>Soil influence:</strong> Obstacles or hard layers redirect the root, causing deformities.</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3>Early root swelling</h3>
+        <p>
+          The upper portion of the root starts to thicken more than the tip, forming the familiar
+          conical or cylindrical profile. Colour begins to intensify as carotenoids accumulate.
+        </p>
+        <ul>
+          <li><strong>Top pattern:</strong> Foliage becomes fuller and more upright.</li>
+          <li><strong>Water pattern:</strong> Even moisture prevents cracking and fine “hairy” roots.</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <strong>Timeline note:</strong> Many “baby carrots” are harvested toward the end of this
+        stage, when roots are small but tender and sweet.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stage 4 – Bulk root growth and maturation <span class="pill">Weeks 7–11+</span></h2>
+
+      <div class="stage">
+        <h3>Bulk accumulation</h3>
+        <p>
+          This is the main yield-building phase. The plant channels sugars produced by the leaves
+          into the root, which increases in diameter and length. The shoulders of the carrot may
+          start to push slightly above the soil surface.
+        </p>
+        <ul>
+          <li><strong>Root pattern:</strong> Fastest increase in size; colour fully developed.</li>
+          <li><strong>Top pattern:</strong> Strong, leafy canopy that can shade soil and suppress weeds.</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3>Approaching harvest</h3>
+        <p>
+          Depending on the variety, carrots are typically ready when the root diameter reaches
+          about 1–2&nbsp;cm or more at the shoulder. Texture is crisp, and flavour is well developed.
+          If left too long, roots can become woody or split.
+        </p>
+        <ul>
+          <li><strong>Check pattern:</strong> Gently scrape soil away from one root to inspect size.</li>
+          <li><strong>Colour cue:</strong> Shoulders should be fully coloured; cover exposed shoulders to avoid greening.</li>
+        </ul>
+      </div>
+
+      <div class="tip">
+        For a staggered harvest, pull a few carrots at a time once they reach usable size, leaving
+        others to size up further.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stage 5 – Post-harvest and biennial cycle <span class="pill">Beyond year 1</span></h2>
+
+      <div class="stage">
+        <h3>After harvest</h3>
+        <p>
+          Once harvested, carrots are still living roots. If tops are left on, they continue to
+          transpire and draw moisture from the root, softening it. Removing foliage and storing
+          roots cool and humid slows respiration and preserves sweetness.
+        </p>
+        <ul>
+          <li><strong>Pattern:</strong> Gradual loss of moisture and sugars over time.</li>
+          <li><strong>Best practice:</strong> Trim tops, keep cool, and avoid drying air.</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3>Biennial nature</h3>
+        <p>
+          Botanically, carrots are biennials. If left in the ground into a second season, the root
+          uses its stored energy to send up a tall flowering stalk and set seed. At that point, the
+          root becomes woody and inedible, but the plant completes its reproductive cycle.
+        </p>
+        <ul>
+          <li><strong>Year 1 pattern:</strong> Energy storage in the root.</li>
+          <li><strong>Year 2 pattern:</strong> Energy release into flowering and seed production.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Common pattern problems and what they mean</h2>
+      <div class="grid">
+        <div>
+          <h3>Forked or twisted roots</h3>
+          <ul>
+            <li><strong>Likely causes:</strong> Stones, clods, shallow tillage, or transplanting.</li>
+            <li><strong>Pattern clue:</strong> Root splits early when it hits an obstacle.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hairy roots</h3>
+          <ul>
+            <li><strong>Likely causes:</strong> Excess nitrogen or very dry–wet–dry cycles.</li>
+            <li><strong>Pattern clue:</strong> Many fine lateral roots along the main taproot.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cracking and splitting</h3>
+          <ul>
+            <li><strong>Likely causes:</strong> Sudden heavy watering after drought.</li>
+            <li><strong>Pattern clue:</strong> Cracks appear late, during rapid swelling.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Green shoulders</h3>
+          <ul>
+            <li><strong>Likely causes:</strong> Root tops exposed to sunlight.</li>
+            <li><strong>Pattern clue:</strong> Only upper portion turns green; cover with soil or mulch.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Carrot growth patterns are consistent and predictable—once you learn the stages, you can read
+    your crop like a timeline in the soil.
+  </footer>
+</body>
+</html>

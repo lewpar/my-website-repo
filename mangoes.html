@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mangoes – The King of Fruits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --mango-yellow: #ffc94a;
+      --mango-orange: #ff9f1c;
+      --leaf-green: #2e7d32;
+      --dark: #2b2b2b;
+      --light: #fffdf5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--mango-yellow), var(--mango-orange));
+      color: #fff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #f0e4c3;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: var(--mango-orange);
+      background: #fff7e0;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 1.5rem 1.75rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+      border: 1px solid #f5e7c6;
+    }
+
+    section h2 {
+      margin-bottom: 0.75rem;
+      color: var(--leaf-green);
+      font-size: 1.5rem;
+    }
+
+    section h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+      color: var(--dark);
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin-left: 1.25rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #fff7e0;
+      color: #8a5a00;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 0.75rem;
+    }
+
+    .card {
+      border-radius: 0.9rem;
+      border: 1px solid #f3e0b5;
+      padding: 1rem;
+      background: #fffdf8;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--mango-orange);
+      padding-left: 0.75rem;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+    }
+
+    .chip-row {
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      font-size: 0.85rem;
+      color: #7a6a4a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #151515;
+        color: #f7f3e8;
+      }
+      header {
+        color: #1b1200;
+      }
+      nav {
+        background: #1f1f1f;
+        border-bottom-color: #3a2f1a;
+      }
+      nav a {
+        color: #f7f3e8;
+      }
+      section {
+        background: #1f1f1f;
+        border-color: #3a2f1a;
+        box-shadow: none;
+      }
+      .card {
+        background: #252525;
+        border-color: #3a2f1a;
+      }
+      footer {
+        color: #b8a98a;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mangoes: The King of Fruits</h1>
+    <p>
+      Juicy, fragrant, and vibrant—mangoes are loved around the world for their sweetness, versatility, and tropical charm.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#varieties">Popular varieties</a></li>
+      <li><a href="#nutrition">Nutrition</a></li>
+      <li><a href="#uses">Culinary uses</a></li>
+      <li><a href="#tips">Buying & storage tips</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>What is a mango?</h2>
+      <p>
+        Mangoes are tropical stone fruits that grow on large evergreen trees. They have smooth skin, golden to deep orange
+        flesh, and a single flat seed in the center. Their flavor ranges from intensely sweet and floral to slightly tangy,
+        depending on the variety and ripeness.
+      </p>
+      <p class="highlight">
+        Mangoes are believed to have originated in South Asia and are now grown in many warm regions worldwide.
+      </p>
+      <p>
+        Today, mangoes are enjoyed fresh, blended into drinks, cooked into savory dishes, and turned into desserts, pickles,
+        and chutneys. They’re a symbol of summer in many cultures and often associated with celebration and abundance.
+      </p>
+    </section>
+
+    <section id="varieties">
+      <h2>Popular mango varieties</h2>
+      <p>
+        There are hundreds of mango varieties, each with its own flavor, aroma, and texture. Here are a few well-known types:
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Alphonso</h3>
+          <p>
+            Often called the “king of mangoes,” Alphonso is rich, sweet, and intensely aromatic with smooth, fiberless flesh.
+          </p>
+          <div class="chip-row">
+            <span class="tag">Very sweet</span>
+            <span class="tag">Desserts</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Kensington Pride</h3>
+          <p>
+            A popular Australian variety with a sweet, slightly tangy flavor and a juicy, fragrant flesh—great for eating fresh.
+          </p>
+          <div class="chip-row">
+            <span class="tag">Australia</span>
+            <span class="tag">Juicy</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Tommy Atkins</h3>
+          <p>
+            Widely available, with firm flesh and mild sweetness. Holds its shape well, making it useful in salads and salsas.
+          </p>
+          <div class="chip-row">
+            <span class="tag">Firm</span>
+            <span class="tag">Good for slicing</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Honey / Ataulfo</h3>
+          <p>
+            Small, golden mangoes with creamy, buttery flesh and a honey-like sweetness, perfect for smoothies and snacking.
+          </p>
+          <div class="chip-row">
+            <span class="tag">Creamy</span>
+            <span class="tag">Smoothies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nutrition">
+      <h2>Nutritional benefits</h2>
+      <p>
+        Mangoes are not just delicious—they also provide a range of vitamins, minerals, and beneficial plant compounds.
+      </p>
+
+      <h3>Key nutrients</h3>
+      <ul>
+        <li><strong>Vitamin C:</strong> Supports immune function and helps with collagen production.</li>
+        <li><strong>Vitamin A:</strong> Important for vision, skin health, and normal growth.</li>
+        <li><strong>Dietary fiber:</strong> Aids digestion and helps you feel full and satisfied.</li>
+        <li><strong>Folate & B vitamins:</strong> Support energy metabolism and cell function.</li>
+        <li><strong>Antioxidants:</strong> Such as beta-carotene and other carotenoids.</li>
+      </ul>
+
+      <p class="highlight">
+        Enjoying mango in moderation can be part of a balanced diet—especially when paired with other fruits and whole foods.
+      </p>
+    </section>
+
+    <section id="uses">
+      <h2>Culinary uses</h2>
+      <p>
+        Mangoes shine in both sweet and savory dishes. Their natural sweetness and acidity make them incredibly versatile in
+        the kitchen.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Sweet ideas</h3>
+          <ul>
+            <li>Blend into smoothies or lassi-style yogurt drinks.</li>
+            <li>Layer into fruit salads, parfaits, or chia puddings.</li>
+            <li>Use as a topping for pancakes, waffles, or ice cream.</li>
+            <li>Make sorbets, popsicles, or simple mango purée for desserts.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Savory ideas</h3>
+          <ul>
+            <li>Toss into salsas with lime, chili, and herbs.</li>
+            <li>Add to salads with leafy greens, avocado, and nuts.</li>
+            <li>Cook into chutneys to serve with curries or grilled foods.</li>
+            <li>Use in rice dishes, grain bowls, or fresh spring rolls.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>How to choose, ripen, and store mangoes</h2>
+
+      <h3>Choosing ripe mangoes</h3>
+      <ul>
+        <li><strong>Feel:</strong> A ripe mango gives slightly when gently squeezed, like a ripe peach.</li>
+        <li><strong>Smell:</strong> A sweet, fragrant aroma near the stem end is a good sign.</li>
+        <li><strong>Look:</strong> Color can help, but ripeness is more about feel and fragrance than skin color alone.</li>
+      </ul>
+
+      <h3>Ripening at home</h3>
+      <ul>
+        <li><strong>Room temperature:</strong> Leave firm mangoes on the counter until they soften.</li>
+        <li><strong>Paper bag trick:</strong> Place mangoes in a paper bag to speed up ripening.</li>
+      </ul>
+
+      <h3>Storing mangoes</h3>
+      <ul>
+        <li><strong>Whole, ripe:</strong> Store in the fridge and use within a few days.</li>
+        <li><strong>Cut mango:</strong> Refrigerate in an airtight container and enjoy within 2–3 days.</li>
+        <li><strong>Freezing:</strong> Dice and freeze on a tray, then store in bags for smoothies and desserts.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Made with 🍋—well, actually 🥭—for mango lovers everywhere.
+  </footer>
+</body>
+</html>
